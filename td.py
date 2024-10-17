@@ -13,10 +13,18 @@ Automne = ["septembre" , "octobre ", "novembre"]
 saisons  = [Automne , Hiver , Printemps , ete ]
 print("Saisons : ", saisons[:][1])
 # Exercice 3
-list = list(range(0,9))
 x = range(11)
 for n in x:
   print(n * 9)
 # list = list(range(0,91,9))
+# Exercice 4
+ex = len(range(2,10001,2))
+print(ex)
 
+# Partie 3 exercice1
+Animal = ["Vache ","Souris","Levure","Bacterie"]
+for n in Animal:
+    print(n)
+# methode2
+print("\n".join(Animal))
 
