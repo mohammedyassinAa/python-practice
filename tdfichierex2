@@ -1,0 +1,34 @@
+class Rectangle:
+    def _init_(self, largeur, longueur):
+        self._largeur = largeur
+        self._longueur = longueur
+
+    # Getter and setters
+    
+    def largeur(self):
+        return self._largeur
+
+    @largeur.setter
+    def largeur(self, valeur):
+            self._largeur = valeur
+        
+    def longueur(self):
+        return self._longueur
+
+    @longueur.setter
+    def longueur(self, valeur):
+        self._longueur = valeur
+
+
+
+    def perimetre(self):
+        return 2 * (self.largeur + self.longueur)
+
+    def surface(self):
+        return self.largeur * self.longueur
+
+
+class Para(Rectangle):
+    def _init_(self, largeur, longueur, hauteur):
+        super()._init_(largeur, longueur)
+        self._hauteur = hauteur
